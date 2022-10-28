@@ -1,0 +1,29 @@
+body{
+    /*background:"Blueeye.jpg"; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    color:rgb(44, 31, 181);
+}
+p{
+    color:rgb(42, 176, 42);
+    font-size: 24px;
+    font-style:italic;
+}
+.btn{
+    background-color: rgb(33, 83, 92);
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    margin-left: 45%;
+    margin-top: 5%;
+    
+}
+.btn:hover{
+    background-color: rgb(114, 13, 90);
+    
+}

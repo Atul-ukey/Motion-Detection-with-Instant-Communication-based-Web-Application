@@ -1,0 +1,57 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock title %}</title></title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+  </head>
+  <body>
+    <nav class= "navbar background h-nav-resp">
+      <ul class= "nav-list v-class-resp">
+        <div class="logo"><img src="static/imgs/security.jpg" alt="logo" /></div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Settings">Settings</a></li>
+        <li><a href="#Contact Us">Contact Us</a></li>
+      </ul>
+       <div class="rightNav v-class-resp">
+        <input type="text" name="search" id="search">
+        <button class="buttons" id = "buttons">Search</button>
+       </div>
+       <div class = "burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
+       </div>
+    </nav>
+    <section class = "background firstSection">
+        <div class="box-main">
+        <pre class = "text-big">RoboSecurity</pre>
+        <p class = "text-small">"These thieves defend themselves by saying, 
+        'I was there all the time, and the officials missed me.'
+         Favorite excuses for missing surveillance checkpoints:
+         jacket covered the number took off the shirt with the number
+         hidden in a crowd."</p>
+            <form  method = "post" class = "form">
+            {% csrf_token %}
+                <label for="IP">IP Address</label><br>
+                <input type="text" id="IP" name="IP"><br><br>
+                <label for="whats">Whatsapp Number</label><br>
+                <input type="text" id="whats" name="whats"><br><br>
+                <button type="submit" class = "buttons">Start Security</button>
+            </form>
+            <div class="lastpara">
+                <p>We promise of your security and safety.
+We provide the best live eye protection anywhere anytime.
+Your safety is our responsibility.</p>
+            </div>
+        </div>
+    <footer class="footer">All copyrights to &copy; RoboSecurity</footer>
+</section>
+<script type="text/javascript" src="static/js/resp.js"></script>
+  </body>
+</html>

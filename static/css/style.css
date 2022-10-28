@@ -1,0 +1,170 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+.logo{
+    width : 20%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.logo img{
+    width : 33%;
+    border:1px solid rgb(69, 15, 15);
+    border-radius: 60px;
+
+}
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position:sticky;
+    top:0;
+    cursor : pointer;
+    height: 58px;
+    transition: all 0.7s ease-out;
+
+    
+}
+.nav-list{
+   /* background-color:black;*/
+    width : 70%;
+    display:flex;
+    align-items: center;
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 23px 23px
+
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+
+
+}
+.nav-list li a:hover{
+    color:rgb(114, 28, 154);
+
+
+}
+.rightNav{
+    width : 30%;
+    /*background-color: rgb(53, 31, 165);*/
+    text-align: right;
+    height: 58px;
+    
+}
+#search{
+    padding : 5px;
+    font-size : 10px;
+    border : 1px solid white;
+    border-radius: 34px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.826) url('../imgs/eyesec.png');
+    background-size: cover;
+    /*background-blend-mode : darken;*/
+    background-attachment: fixed;
+}
+.buttons {
+    background: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 7px;
+    margin: 7px 6px;
+    cursor:pointer
+  }
+  .buttons:hover {
+    background-color:rgb(88, 65, 95);
+  }
+  .box-main{
+    /*display:flex;*/
+    padding:7%;
+    justify-content:center;
+    align-items:center;
+    color : white;
+    font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  }
+  .form
+  {
+    margin : 5%;
+    justify-content:center;
+    align-items:center;
+    color : white;
+    font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  }
+  .firstSection
+  {
+    background-attachment: fixed;
+    background-size:cover;
+  }
+  .text-big{
+    font-size:50px;
+    color: rgb(129, 43, 79);
+    padding:6px;
+  }
+  .text-small{
+    font-size:15px;
+    color:rgb(4, 81, 55);
+  }
+  #buttons{
+    margin: 5px;
+  }
+  .footer{
+     color:rgb(199, 235, 155);
+     text-align: center;
+  }
+  .lastpara
+  {
+    font-family: "Trirong", serif;
+    font-size: 20px;
+  }
+  .burger{
+    display: none;
+    position:absolute;
+    cursor:pointer;
+    right:5%;
+    top:15px;
+
+  }
+  .line{
+    width:33px;
+    background-color:white;
+    height:4px;
+    margin:3px 3px;
+  }
+  .lastpara{
+    margin:5%;
+    padding-right: 50%;
+  }
+  @media only screen and (max-width:747px)
+  {
+    .nav-list{
+        flex-direction:column;
+    }
+    .navbar{
+        flex-direction:column;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .h-nav-resp{
+        height:  428px;
+    }
+  }
